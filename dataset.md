@@ -1,26 +1,28 @@
-﻿ 
-|#  | Variable | Description | Non-Null Count | Dtype | 
-|--|--|--|--|--| 
-| 0|Id|Unique ID of each customer|2240 non-null |  int64  |
-| 1|   Year_Birth| Age of the customer| 2240 non-null |  int64  |
- |2 |  Education  | customer's level of education|  2240 non-null   |object |
-| 3|   Marital_Status | customer's marital status|     2240 non-null|   object |
- |4  | Income  |customer's yearly household income|  2216 non-null| float64|
-|5  | Kidhome | number of small children in customer's household|              2240 non-null  | int64  |
- |6|   Teenhome  |number of teenagers in customer's household |           2240 non-null  | int64  |
- |7|   Dt_Customer   |date of customer's enrollment with the company|      2240 non-null |  object |
- |8 |  Recency  |number of days since the last purchase |            2240 non-null |  int64  |
-| 9  | MntWines |the amount spent on wine products in the last 2 years |            2240 non-null |  int64  |
-| 10|  MntFruits | the amount spent on fruits products in the last 2 years|           2240 non-null|   int64  |
- |11  |MntMeatProducts | the amount spent on meat products in the last 2 years |   2240 non-null  | int64  |
- |12|  MntFishProducts   |the amount spent on fish products in the last 2 years |   2240 non-null  | int64|  
-| 13|  MntSweetProducts |the amount spent on sweet products in the last 2 years |    2240 non-null  | int64  |
- |14 | MntGoldProds | the amount spent on gold products in the last 2 years       |2240 non-null |   int64  |
- |15 | NumDealsPurchases | number of purchases made with discount  | 2240 non-null |  int64  |
- |16 | NumWebPurchases | number of purchases made through the company's website  |     2240 non-null |  int64  |
-| 17 | NumCatalogPurchases | number of purchases made using catalog (buying goods to be shipped through the mail) | 2240 non-null  | int64  |
-| 18 | NumStorePurchases | number of purchases made directly in stores |  2240 non-null |  int64  |
-| 19 | NumWebVisitsMonth | number of visits to company's website in the last month  |2240 non-null|   int64  |
- |20 | Response|  1 if customer accepted the offer in the last campaign, 0 otherwise          | 2240 non-null |  int64  |
-| 21|  Complain  |  1 if the customer complained in the last 2 years        | 2240 non-null  | int64  |  
+[Ccылка на датасет](https://www.kaggle.com/datasets/ahsan81/superstore-marketing-campaign-dataset)
 
+Кол-во наблюдений (строк) в датасете: **2240**
+
+| Поле                    | Описание                                                                                         | Тип данных     | Кол-во пропусков | Кол-во уникальных значений |
+|--------------|-----------------|--------------|--------------|--------------|
+| **Id**                  | Уникальный идентификатор каждого клиента                                                         | Количественный | 0                | 2240                       |
+| **Year_Birth**          | Год рождения клиента                                                                             | Количественный | 0                | 59                         |
+| **Education**           | Уровень образования клиента                                                                      | Категориальный | 0                | 5                          |
+| **Marital_Status**      | Семейное положение клиента                                                                       | Категориальный | 0                | 8                          |
+| **Income**              | Годовой доход клиента                                                                            | Количественный | 24               | 1974                       |
+| **Kidhome**             | Количество маленьких детей в семье клиента                                                       | Количественный | 0                | 3                          |
+| **Teenhome**            | Количество подростков в семье клиента                                                            | Количественный | 0                | 3                          |
+| **Dt_Customer**         | Дата регистрации клиента в компании                                                              | Категориальный | 0                | 663                        |
+| **Recency**             | Количество дней с момента последней покупки                                                      | Количественный | 0                | 100                        |
+| **MntWines**            | Сумма, потраченная на вино за последние 2 года                                                   | Количественный | 0                | 776                        |
+| **MntFruits**           | Сумма, потраченная на фрукты за последние 2 года                                                 | Количественный | 0                | 158                        |
+| **MntMeatProducts**     | Сумма, потраченная на мясные продукты за последние 2 года                                        | Количественный | 0                | 558                        |
+| **MntFishProducts**     | Сумма, потраченная на рыбные продукты за последние 2 года                                        | Количественный | 0                | 182                        |
+| **MntSweetProducts**    | Сумма, потраченная на сладости за последние 2 года                                               | Количественный | 0                | 177                        |
+| **MntGoldProds**        | Сумма, потраченная на золотые изделия за последние 2 года                                        | Количественный | 0                | 213                        |
+| **NumDealsPurchases**   | Количество покупок, сделанных по скидке                                                          | Количественный | 0                | 15                         |
+| **NumWebPurchases**     | Количество покупок, совершённых через сайт компании                                              | Количественный | 0                | 15                         |
+| **NumCatalogPurchases** | Количество покупок, совершённых по каталогу (товары, заказанные по почте)                        | Количественный | 0                | 14                         |
+| **NumStorePurchases**   | Количество покупок, совершённых непосредственно в магазинах                                      | Количественный | 0                | 14                         |
+| **NumWebVisitsMonth**   | Количество посещений сайта компании за последний месяц                                           | Количественный | 0                | 16                         |
+| **Response**            | Целевая переменная: **1**, если клиент принял предложение в последней кампании, **0** – если нет | Категориальный | 0                | 2                          |
+| **Complain**            | **1**, если клиент жаловался в течение последних 2 лет, **0** – если нет                         | Категориальный | 0                | 2                          |
